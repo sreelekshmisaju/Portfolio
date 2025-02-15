@@ -15,15 +15,14 @@ const About: React.FC<AboutProps> = ({ isDarkMode }) => {
     >
       {/* Background Accent */}
       <div
-        className="absolute top-1/2 transform -translate-y-1/2 opacity-20 lg:opacity-30"
+        className="absolute top-1/2 transform -translate-y-1/2 opacity-20 lg:opacity-30 hidden md:block"
         style={{
-          backgroundImage: `url('laptop.png')`,
+          backgroundImage: `url('/laptop.png')`,
           backgroundSize: "contain",
           backgroundRepeat: "no-repeat",
           width: "400px",
           height: "400px",
-          right: isDarkMode ? "auto" : "0",
-          left: isDarkMode ? "0" : "auto",
+          [isDarkMode ? "left" : "right"]: "0",
         }}
       />
 
@@ -36,33 +35,27 @@ const About: React.FC<AboutProps> = ({ isDarkMode }) => {
           {/* About Text */}
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">
-              Passion for creativity and innovation drives my work. With
-              expertise in Artificial Intelligence, Machine Learning, and
-              Full-Stack Development, my journey has been fueled by curiosity
-              and a dedication to problem-solving. I specialize in Python, Deep
-              Learning, and building interactive applications that blend
-              technology with user-centric design.
+              Passion for creativity and innovation drives my work. With expertise in Artificial
+              Intelligence, Machine Learning, and Full-Stack Development, my journey has been fueled by
+              curiosity and a dedication to problem-solving. I specialize in Python, Deep Learning, and
+              building interactive applications that blend technology with user-centric design.
             </p>
             <p className="text-lg leading-relaxed">
-              My research, featured in IEEE and Springer, reflects my commitment
-              to advancing technology through practical solutions. From
-              developing AI-powered image enhancement models to integrating
-              IoT-driven automation, I thrive on exploring new dimensions of
-              technology.
+              My research, featured in IEEE and Springer, reflects my commitment to advancing technology
+              through practical solutions. From developing AI-powered image enhancement models to
+              integrating IoT-driven automation, I thrive on exploring new dimensions of technology.
             </p>
 
             {/* Download Resume Button */}
-            <div className="flex pt-4">
-              <a
-                href="Sreelekshmi_Saju_Resume.pdf"
-                download
-                className="relative inline-flex items-center px-8 py-3 rounded-lg text-lg font-semibold bg-blue-600 hover:bg-blue-700 text-white transition-transform transform hover:scale-105 shadow-lg"
-              >
-                <FileText className="w-5 h-5 mr-2" />
-                Download Resume
-                <span className="absolute inset-0 bg-blue-500 opacity-30 rounded-lg blur-lg"></span>
-              </a>
-            </div>
+            <a
+              href="/Sreelekshmi_Saju_Resume.pdf"
+              download="Sreelekshmi_Saju_Resume.pdf"
+              className="inline-flex items-center justify-center px-8 py-3 border-2 rounded-lg transition-all duration-300 
+              text-blue-600 border-blue-600 hover:bg-blue-50 dark:text-purple-400 dark:border-purple-400 dark:hover:bg-purple-900"
+            >
+              <FileText className="w-5 h-5 mr-2" />
+              Download Resume
+            </a>
           </div>
 
           {/* Information Cards */}
@@ -99,10 +92,9 @@ const About: React.FC<AboutProps> = ({ isDarkMode }) => {
             ].map(({ Icon, title, text, color, glow }, index) => (
               <div
                 key={index}
-                className={`p-6 rounded-lg border border-transparent bg-opacity-80 backdrop-blur-lg relative overflow-hidden transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:${glow}`}
+                className={`p-6 rounded-lg border border-transparent bg-opacity-80 backdrop-blur-lg relative overflow-hidden transition-all duration-300 transform hover:scale-105 hover:shadow-xl ${glow}`}
                 style={{
-                  background: `linear-gradient(135deg, ${color})`,
-                  boxShadow: `0px 0px 25px rgba(255, 255, 255, 0.2)`,
+                  background: `linear-gradient(135deg, var(--tw-gradient-stops))`,
                 }}
               >
                 <div className="p-3 rounded-full bg-white/20">
@@ -110,14 +102,6 @@ const About: React.FC<AboutProps> = ({ isDarkMode }) => {
                 </div>
                 <h3 className="text-xl font-semibold mt-4 text-white">{title}</h3>
                 <p className="text-white/80 mt-2">{text}</p>
-
-                {/* Animated Glow */}
-                <div
-                  className={`absolute inset-0 rounded-lg opacity-10 transition-opacity duration-300 hover:opacity-40`}
-                  style={{
-                    background: `radial-gradient(circle, rgba(255,255,255,0.4) 0%, rgba(0,0,0,0) 70%)`,
-                  }}
-                ></div>
               </div>
             ))}
           </div>
@@ -128,3 +112,4 @@ const About: React.FC<AboutProps> = ({ isDarkMode }) => {
 };
 
 export default About;
+

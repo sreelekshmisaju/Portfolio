@@ -20,7 +20,7 @@ const Home: React.FC<HomeProps> = ({ isDarkMode }) => {
   const constCoder = `
 const coder = {
   name: "Sreelekshmi Saju",
-  skills: ["React",  "MySql", "MongoDB", "Docker", "AWS"],
+  skills: ["React", "MySQL", "MongoDB", "Docker", "AWS"],
   hardWorker: true,
   quickLearner: true,
   problemSolver: true,
@@ -43,9 +43,11 @@ const coder = {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left Text Section */}
           <div className="space-y-6 text-center md:text-left">
-            <p className={`font-semibold text-lg animate-fadeIn ${
+            <p
+              className={`font-semibold text-lg animate-fadeIn ${
                 isDarkMode ? "text-purple-300" : "text-blue-600"
-              }`}>
+              }`}
+            >
               Hi, I'm
             </p>
             <h1
@@ -100,17 +102,15 @@ const coder = {
               </a>
 
               <a
-                href="Sreelekshmi_Saju_Resume.pdf"
-                download
-                className={`inline-flex items-center justify-center px-8 py-3 border-2 rounded-lg transition-all duration-300 ${
-                  isDarkMode
-                    ? "border-purple-400 text-purple-400 hover:bg-purple-900"
-                    : "border-blue-600 text-blue-600 hover:bg-blue-50"
-                }`}
-              >
-                <FileText className="w-5 h-5 mr-2" />
-                Download Resume
-              </a>
+  href="/Sreelekshmi_Saju_Resume.pdf"
+  download="Sreelekshmi_Saju_Resume.pdf"
+  className="inline-flex items-center justify-center px-8 py-3 border-2 rounded-lg transition-all duration-300 
+    text-blue-600 border-blue-600 hover:bg-blue-50 dark:text-purple-400 dark:border-purple-400 dark:hover:bg-purple-900"
+>
+  <FileText className="w-5 h-5 mr-2" />
+  Download Resume
+</a>
+
             </div>
           </div>
 
@@ -128,9 +128,7 @@ const coder = {
               animate={{ opacity: isDarkMode ? 0.12 : 0.15, y: 0 }}
               transition={{ duration: 1 }}
             >
-              <pre className="text-gray-300 md:text-gray-700">
-                {constCoder}
-              </pre>
+              <pre className="text-gray-300 md:text-gray-700">{constCoder}</pre>
             </motion.div>
 
             {/* Profile Image */}
@@ -143,7 +141,7 @@ const coder = {
               }}
             >
               <img
-                src="/1000504426.png"
+                src="/1000504426.png" // Corrected Image Path
                 alt="Profile"
                 className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500"
               />
@@ -156,3 +154,4 @@ const coder = {
 };
 
 export default Home;
+

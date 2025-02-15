@@ -37,7 +37,7 @@ const Education: React.FC<EducationProps> = ({ isDarkMode }) => {
       {/* Background Image with Fade Effect */}
       <div 
         className="absolute inset-0 bg-cover bg-center opacity-30"
-        style={{ backgroundImage: "url('edu.png')" }}
+        style={{ backgroundImage: "url('/edu.png')" }}
       ></div>
 
       {/* Gradient Overlay for Better Readability */}

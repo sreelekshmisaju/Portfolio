@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heart, Home, Notebook as Robot, Calculator,lipboardList } from 'lucide-react';
+import { Heart, Home, Notebook as Robot, Calculator } from 'lucide-react';
 
 
 interface Project {
@@ -62,19 +62,7 @@ const projects: Project[] = [
     ],
     year: "2025",
   },
-  {
-  title: "Advanced To-Do List App",
-  description: "Built a feature-rich to-do list application with task due dates, priority levels, editable entries, and a responsive dark/light theme using HTML, CSS, and JavaScript.",
-  image: "https://cdn-icons-png.flaticon.com/512/10609/10609242.png",
-  technologies: ["HTML", "CSS", "JavaScript"],
-  icon: ClipboardList, 
-  points: [
-    "Added date picker and priority dropdown with color-coded labels",
-    "Enabled inline editing, marking as complete, and smooth deletion animations",
-    "Implemented responsive UI and theme toggle with CSS transitions and JS"
-  ],
-  year: "2025",
-},
+  
 
 ];
 

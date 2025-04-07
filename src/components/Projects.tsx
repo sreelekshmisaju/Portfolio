@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heart, Home, Notebook as Robot, Calculator } from 'lucide-react';
+import { Heart, Home, Notebook as Robot, Calculator, ClipboardList } from 'lucide-react';
 
 
 interface Project {
@@ -59,6 +59,19 @@ const projects: Project[] = [
       "Implemented scientific functions (sin, cos, tan, log, sqrt, power)",
       "Designed a responsive and modern UI with CSS grid and variables",
       "Integrated smooth dark/light theme toggle using CSS variables and JS"
+    ],
+    year: "2025",
+  },
+  {
+    title: "Advanced To-Do List App",
+    description: "Built a feature-rich to-do list application with task due dates, priority levels, editable entries, and a responsive dark/light theme using HTML, CSS, and JavaScript.",
+    image: "https://play-lh.googleusercontent.com/VPqK75BwKMtTDFF6UQS6E3GYdYqzvZfddDxoKRH-DSlXIcYLN_EeSy5OXKx0bhBTtLUU",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    icon: ClipboardList, 
+    points: [
+      "Added date picker and priority dropdown with color-coded labels",
+      "Enabled inline editing, marking as complete, and smooth deletion animations",
+      "Implemented responsive UI and theme toggle with CSS transitions and JS"
     ],
     year: "2025",
   },

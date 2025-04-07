@@ -1,5 +1,6 @@
 import React from 'react';
-import { Heart, Home, Notebook as Robot } from 'lucide-react';
+import { Heart, Home, Notebook as Robot, Calculator } from 'lucide-react';
+
 
 interface Project {
   title: string;
@@ -47,7 +48,20 @@ const projects: Project[] = [
     icon: Robot,
     points: ["Optimized sensor sensitivity", "Implemented Bluetooth control", "Achieved minimal latency"],
     year: "2019",
-  }
+  },
+  {
+    title: "Scientific Calculator",
+    description: "Developed a responsive scientific calculator with real-time computations, advanced math functions, and a smooth dark/light mode toggle using HTML, CSS, and JavaScript.",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMBi7NRUZKvIwBg1v_r4rJLtR5VObAfYjc0A&s",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    icon: Calculator,
+    points: [
+      "Implemented scientific functions (sin, cos, tan, log, sqrt, power)",
+      "Designed a responsive and modern UI with CSS grid and variables",
+      "Integrated smooth dark/light theme toggle using CSS variables and JS"
+    ],
+    year: "2025",
+  },
 ];
 
 const Projects: React.FC<ProjectsProps> = ({ isDarkMode }) => {

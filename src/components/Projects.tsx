@@ -77,6 +77,20 @@ const projects: Project[] = [
     ],
     year: "2025",
   },
+  {
+    title: "Fake News Detection using NLP",
+    description: "Developed a machine learning model that classifies news articles as fake or real using natural language processing techniques. Used TF-IDF vectorization and PassiveAggressiveClassifier to achieve high accuracy.",
+    image: "https://miro.medium.com/v2/resize:fit:4800/format:webp/1*OT_N4E4FjLnwoxu58dcOJA.png",
+    technologies: ["Python", "Pandas", "Scikit-learn", "NLP", "Matplotlib", "Seaborn"],
+    githubLink: "https://github.com/sreelekshmisaju/Fake-News-Detection-NLP.git",   
+    icon: Newspaper,
+    points: [
+      "Cleaned and preprocessed text data from Kaggle's Fake and Real News dataset",
+      "Used TF-IDF for feature extraction and trained PassiveAggressiveClassifier",
+      "Evaluated model with confusion matrix, classification report, and visualizations"
+    ],
+    year: "2025"
+  },
   
 
 ];

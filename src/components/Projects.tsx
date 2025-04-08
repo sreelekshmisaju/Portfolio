@@ -54,6 +54,7 @@ const projects: Project[] = [
     description: "Developed a responsive scientific calculator with real-time computations, advanced math functions, and a smooth dark/light mode toggle using HTML, CSS, and JavaScript.",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMBi7NRUZKvIwBg1v_r4rJLtR5VObAfYjc0A&s",
     technologies: ["HTML", "CSS", "JavaScript"],
+    githubLink: "https://github.com/sreelekshmisaju/Calculator-using-HTML-CSS-JavaScript.git",
     icon: Calculator,
     points: [
       "Implemented scientific functions (sin, cos, tan, log, sqrt, power)",
@@ -67,6 +68,7 @@ const projects: Project[] = [
     description: "Built a feature-rich to-do list application with task due dates, priority levels, editable entries, and a responsive dark/light theme using HTML, CSS, and JavaScript.",
     image: "https://play-lh.googleusercontent.com/VPqK75BwKMtTDFF6UQS6E3GYdYqzvZfddDxoKRH-DSlXIcYLN_EeSy5OXKx0bhBTtLUU",
     technologies: ["HTML", "CSS", "JavaScript"],
+    githubLink: "https://github.com/sreelekshmisaju/To-do-List-App.git",
     icon: ClipboardList, 
     points: [
       "Added date picker and priority dropdown with color-coded labels",

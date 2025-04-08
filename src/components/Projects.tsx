@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heart, Home, Notebook as Robot, Calculator, ClipboardList,Newspaper } from 'lucide-react';
+import { Heart, Home, Notebook as Robot, Calculator,ClipboardList, Newspaper } from 'lucide-react';
 
 
 interface Project {
@@ -92,7 +92,6 @@ const projects: Project[] = [
     year: "2025"
   },
   
-
 ];
 
 const Projects: React.FC<ProjectsProps> = ({ isDarkMode }) => {

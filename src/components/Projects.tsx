@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heart, Home, Notebook as Robot, Calculator, ClipboardList } from 'lucide-react';
+import { Heart, Home, Notebook as Robot, Calculator, ClipboardList,Newspaper } from 'lucide-react';
 
 
 interface Project {

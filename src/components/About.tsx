@@ -48,8 +48,8 @@ const About: React.FC<AboutProps> = ({ isDarkMode }) => {
 
             {/* Download Resume Button */}
             <a
-              href="/Sreelekshmi%20Saju__Resume.pdf"
-              download="Sreelekshmi Saju__Resume.pdf"
+              href="/Sreelekshmi_Resume.pdf"
+              download="Sreelekshmi_Resume.pdf"
               className="inline-flex items-center justify-center px-8 py-3 border-2 rounded-lg transition-all duration-300 
               text-blue-600 border-blue-600 hover:bg-blue-50 dark:text-purple-400 dark:border-purple-400 dark:hover:bg-purple-900"
             >

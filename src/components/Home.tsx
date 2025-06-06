@@ -102,8 +102,8 @@ const coder = {
               </a>
 
               <a
-  href="/Sreelekshmi_Saju_Resume.pdf"
-  download="Sreelekshmi_Saju_Resume.pdf"
+  href="/Sreelekshmi_Resume_v2.pdf"
+  download="/Sreelekshmi_Resume_v2.pdf"
   className="inline-flex items-center justify-center px-8 py-3 border-2 rounded-lg transition-all duration-300 
     text-blue-600 border-blue-600 hover:bg-blue-50 dark:text-purple-400 dark:border-purple-400 dark:hover:bg-purple-900"
 >

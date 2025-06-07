@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heart, Home, Notebook as Robot, Calculator,ClipboardList, Newspaper,Password } from 'lucide-react';
+import { Heart, Home, Notebook as Robot, Calculator,ClipboardList, Newspaper,Lock } from 'lucide-react';
 
 
 
@@ -99,7 +99,7 @@ const projects: Project[] = [
   image: "https://www.commontools.org/articles/images/6/1.svg",
   technologies: ["Python", "PyQt5", "Random", "GUI"],
   githubLink: "https://github.com/sreelekshmisaju/password-generator.git",
-  icon: Password, 
+  icon: Lock, 
   points: [
     "Designed a user-friendly GUI for generating passwords of variable length and complexity",
     "Implemented options to include uppercase, lowercase, numbers, and special characters",

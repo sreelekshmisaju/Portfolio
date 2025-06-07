@@ -1,5 +1,7 @@
 import React from 'react';
-import { Heart, Home, Notebook as Robot, Calculator,ClipboardList, Newspaper,Password ,Chatbot} from 'lucide-react';
+import { Heart, Home, Notebook as Robot, Calculator,ClipboardList, Newspaper,Password } from 'lucide-react';
+import { Bot as Chatbot } from 'lucide-react';
+
 
 
 interface Project {

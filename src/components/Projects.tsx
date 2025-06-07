@@ -110,7 +110,7 @@ const projects: Project[] = [
   "description": "Developed a Python desktop chatbot application using Tkinter that provides interactive conversations with users. Enhanced user experience by adding animated emoji reactions using Pillow for visual feedback.",
   "image": "https://www.dstny.be/sites/default/files/styles/drimage_focal_720_0/public/media/images/2023-03/Chatbot_720x480_header.png",
   "technologies": ["Python", "Tkinter", "Pillow", "GUI"],
-  "githubLink": "https://github.com/sreelekshmisaju/chatbot-animated-emoji.git",
+  "githubLink": "https://github.com/sreelekshmisaju/ChatBot.git",
   "icon": Chatbot,
   "points": [
     "Built a responsive GUI chatbot interface for real-time user interaction",
